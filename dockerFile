@@ -2,7 +2,7 @@ FROM node:20
 
 WORKDIR /etl-prac
 
-COPY package*.json /etl-prac
+COPY package.json .
 
 RUN npm install
 
