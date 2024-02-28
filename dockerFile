@@ -1,0 +1,13 @@
+FROM node:20
+
+WORKDIR /etl-prac
+
+COPY package*.json /etl-prac
+
+RUN npm install
+
+COPY . /etl-prac
+
+CMD ["node", "main.js"]
+
+EXPOSE 3000
